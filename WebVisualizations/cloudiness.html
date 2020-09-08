@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Landing page</title>
+  <title>Cloudiness page</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -14,7 +14,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Latitude</a>
+        <a class="navbar-brand" href="index.html">Latitude</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -26,44 +26,42 @@
                 Plots
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="maxtemp.html">Max Temperature</a>
+                <a class="dropdown-item" href="maxtemperature.html">Max Temperature</a>
                 <a class="dropdown-item" href="humidity.html">Humidity</a>            
                 <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
                 <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="comparisons.html">Comparison</a>
+                <a class="nav-link" href="Comparison.html">Comparison</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="data.html">Data</a>
+                <a class="nav-link" href="Data.html">Data</a>
             </li>
             </ul>
         </div>
     </nav>
     <div class="row content">
         <div class="col-sm-12 col-md-8 col-lg-8">
-            <h2 class="text-left">Summary: Latitude vs. X</h2>
+            <h2 class="text-left">Cloudiness</h2>
             <hr class="my-4">
-            <img src="Resources/assets/images/Fig1.png" alt="Latitude vs Max Temperature" class="rounded main-image">
-            <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
-
-            <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs, latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+            <img src="Resources/assets/images/Fig3.png" alt="Latitude vs Cloudiness" class="img-fluid">
+            <p>There does not exist an obvious trend when examining a city's latitude and its percent cloudiness. Weather patterns change with minute amounts of variability when increasing distance from the equator at 0 degrees latitude, whether moving further into the Northern or Southern Hemisphere.</p>
         </div>
          <div class="col-sm-12 col-md-4 col-lg-4" >
             <h2 class="text-left">Visualizations</h2>
             <hr class="my-4">
-            <a href="maxtemp.html">
+            <a href="MaxTemperature.html">
                 <img src="Resources/assets/images/Fig1.png" class="rounded float-left thumbnail" alt="Latitude vs Max Temperature">
             </a>
-            <a href="humidity.html">
+            <a href="Humidity.html">
                 <img src="Resources/assets/images/Fig2.png" class="rounded float right thumbnail" alt="Latitude vs Humidity">
             </a>
-            <a href="cloudiness.html">
+            <a href="Cloudiness.html">
                 <img src="Resources/assets/images/Fig3.png" class="rounded float-left  thumbnail" alt="Latitude vs Cloudiness">
             </a>
-            <a href="windspeed.html">
-                <img src="Resources/assets/images/Fig4.png" class="rounded float right  thumbnail" alt="Latitude vs Wind Speed">
+            <a href="WindSpeed.html">
+                <img src="Resources/assets/images/Fig4.png" class="rounded float right  thumbnail" alt="Latitude vs WindSpeed">
             </a>
         </div>
     </div>
